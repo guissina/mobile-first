@@ -149,6 +149,39 @@ footer a {
 	
 	color: #4A4E69;
 }
+
+.card img {
+	animation: topdown 1000ms;
+}
+
+.card h2 {
+	animation: right-left 1000ms;
+}
+
+@keyframes topdown {
+	0% {
+		opacity: 0;
+		transform: translateY(-15px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@keyframes right-left {
+	0% {
+		opacity: 0;
+		transform: translateX(-15px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
 /*
 @media(min-width: 700px) {
 	header {
